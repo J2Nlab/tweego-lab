@@ -4,7 +4,7 @@
 
 See [Tweego's documentation](http://www.motoslave.net/tweego/docs/) for information on how to set it up and use it.
 
-If you believe that you've found a bug in Tweego or simply wish to make a suggestion, you may do so by [creating a new issue](https://github.com/tmedwards/tweego/issues).  Tweego also has a [work log](https://github.com/tmedwards/tweego/projects/1) that may be of interest.
+If you believe that you've found a bug in Tweego or simply wish to make a suggestion, you may do so by [creating a new issue](https://github.com/J2Nlab/tweego-lab/issues).  Tweego also has a [work log](https://github.com/J2Nlab/tweego-lab/projects/1) that may be of interest.
 
 ## INSTALLATION
 
@@ -22,13 +22,13 @@ Tweego is written in the Go programming language, so you'll need to install it, 
 Once all the tooling is installed and set up, the next step is to fetch the Tweego source code.  Open a shell to wherever you wish to store the code and run the following command to clone the repository:
 
 ```
-git clone https://github.com/tmedwards/tweego.git
+git clone https://github.com/J2Nlab/tweego-lab.git
 ```
 
 Next, change to the directory that the previous command created:
 
 ```
-cd tweego
+cd tweego-lab
 ```
 
 There are two major branches within the repository:

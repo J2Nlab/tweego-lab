@@ -1,4 +1,4 @@
-module github.com/tmedwards/tweego
+module github.com/J2Nlab/tweego-lab
 
 go 1.13
 

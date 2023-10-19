@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 
 	// internal packages
-	"github.com/tmedwards/tweego/internal/option"
+	"github.com/J2Nlab/tweego-lab/internal/option"
 	// external packages
 	"github.com/paulrosania/go-charset/charset"
 )

@@ -6,7 +6,7 @@
 This is a collection of tips, from how to avoid pitfalls to best practices.
 
 <p role="note"><b>Note:</b>
-Suggestions for new entries may be submitted by <a href="https://github.com/tmedwards/tweego/issues">creating a new issue</a> at Tweego's <a href="https://github.com/tmedwards/tweego">source code repository</a>—though acceptance of submissions <strong><em>is not</em></strong> guaranteed.
+Suggestions for new entries may be submitted by <a href="https://github.com/J2Nlab/tweego-lab/issues">creating a new issue</a> at Tweego's <a href="https://github.com/J2Nlab/tweego-lab">source code repository</a>—though acceptance of submissions <strong><em>is not</em></strong> guaranteed.
 </p>
 
 

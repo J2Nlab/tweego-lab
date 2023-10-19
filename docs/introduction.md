@@ -12,5 +12,5 @@ This document is a single page, so you may use your browser's find-in-page funct
 </p>
 
 <p role="note"><b>Note:</b>
-If you believe that you've found a bug in Tweego, or simply wish to make a suggestion, you may do so by <a href="https://github.com/tmedwards/tweego/issues">creating a new issue</a> at its <a href="https://github.com/tmedwards/tweego">source code repository</a>.
+If you believe that you've found a bug in Tweego, or simply wish to make a suggestion, you may do so by <a href="https://github.com/J2Nlab/tweego-lab/issues">creating a new issue</a> at its <a href="https://github.com/J2Nlab/tweego-lab">source code repository</a>.
 </p>
