@@ -1,5 +1,5 @@
 /*
-	Copyright © 2014–2020 Thomas Michael Edwards. All rights reserved.
+	Copyright © 2014–2021 Thomas Michael Edwards. All rights reserved.
 	Use of this source code is governed by a Simplified BSD License which
 	can be found in the LICENSE file.
 */
@@ -12,6 +12,7 @@ import (
 	"math"
 	"os"
 	"sort"
+
 	// external packages
 	"github.com/paulrosania/go-charset/charset"
 )
@@ -41,6 +42,7 @@ Options:
   -h, --help               Print this help, then exit.
       --head=FILE          Name of the file whose contents will be appended
                              as-is to the <head> element of the compiled HTML.
+  -j, --json               Output JSON, instead of compiled HTML.
       --list-charsets      List the supported input character sets, then exit.
       --list-formats       List the available story formats, then exit.
       --log-files          Log the processed input files.
@@ -120,7 +122,7 @@ func usageVersion() {
 	fmt.Fprintf(os.Stderr, "\n%s, %s\n", tweegoName, tweegoVersion)
 	fmt.Fprint(os.Stderr, `
 Tweego (a Twee compiler in Go) [http://www.motoslave.net/tweego/]
-Copyright (c) 2014-2020 Thomas Michael Edwards. All rights reserved.
+Copyright (c) 2014-2021 Thomas Michael Edwards. All rights reserved.
 
 `)
 	os.Exit(1)

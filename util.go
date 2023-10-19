@@ -1,5 +1,5 @@
 /*
-	Copyright © 2014–2020 Thomas Michael Edwards. All rights reserved.
+	Copyright © 2014–2021 Thomas Michael Edwards. All rights reserved.
 	Use of this source code is governed by a Simplified BSD License which
 	can be found in the LICENSE file.
 */
@@ -96,7 +96,7 @@ func slugify(original string) string {
 	// delete, C1 controls.
 	illegalRe := regexp.MustCompile(`[\x00-\x20!-/:-@[-^\x60{-\x9f]+`)
 
-	return illegalRe.ReplaceAllLiteralString(original, "_")
+	return illegalRe.ReplaceAllLiteralString(original, "-")
 }
 
 func stringSliceContains(haystack []string, needle string) bool {

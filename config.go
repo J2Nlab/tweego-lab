@@ -1,5 +1,5 @@
 /*
-	Copyright © 2014–2020 Thomas Michael Edwards. All rights reserved.
+	Copyright © 2014–2021 Thomas Michael Edwards. All rights reserved.
 	Use of this source code is governed by a Simplified BSD License which
 	can be found in the LICENSE file.
 */
@@ -11,6 +11,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+
 	// internal packages
 	"github.com/tmedwards/tweego/internal/option"
 	// external packages
@@ -21,6 +22,7 @@ type outputMode int
 
 const (
 	outModeHTML outputMode = iota
+	outModeJSON
 	outModeTwee3
 	outModeTwee1
 	outModeTwine2Archive
@@ -131,6 +133,7 @@ func newConfig() *config {
 	options.Add("format", "-f=s|--format=s")
 	options.Add("head", "--head=s")
 	options.Add("help", "-h|--help")
+	options.Add("json", "-j|--json")
 	options.Add("listcharsets", "--list-charsets")
 	options.Add("listformats", "--list-formats")
 	options.Add("logfiles", "--log-files")
@@ -163,6 +166,8 @@ func newConfig() *config {
 				c.headFile = val.(string)
 			case "help":
 				usage()
+			case "json":
+				c.outMode = outModeJSON
 			case "listcharsets":
 				usageCharsets()
 			case "listformats":

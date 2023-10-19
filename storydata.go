@@ -1,5 +1,5 @@
 /*
-	Copyright © 2014–2020 Thomas Michael Edwards. All rights reserved.
+	Copyright © 2014–2021 Thomas Michael Edwards. All rights reserved.
 	Use of this source code is governed by a Simplified BSD License which
 	can be found in the LICENSE file.
 */
@@ -12,6 +12,18 @@ import (
 	"log"
 	"strings"
 )
+
+type storyJSON struct {
+	Name           string         `json:"name"`
+	Ifid           string         `json:"ifid,omitempty"`
+	Start          string         `json:"start,omitempty"`
+	Options        []string       `json:"options,omitempty"`
+	Format         string         `json:"format,omitempty"`
+	FormatVersion  string         `json:"format-version,omitempty"`
+	Creator        string         `json:"creator,omitempty"`
+	CreatorVersion string         `json:"creator-version,omitempty"`
+	Passages       []*passageJSON `json:"passages"`
+}
 
 type storyDataJSON struct {
 	Ifid          string             `json:"ifid,omitempty"`

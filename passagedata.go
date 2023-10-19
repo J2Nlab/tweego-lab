@@ -1,5 +1,5 @@
 /*
-	Copyright © 2014–2020 Thomas Michael Edwards. All rights reserved.
+	Copyright © 2014–2021 Thomas Michael Edwards. All rights reserved.
 	Use of this source code is governed by a Simplified BSD License which
 	can be found in the LICENSE file.
 */
@@ -9,6 +9,12 @@ package main
 import (
 	"encoding/json"
 )
+
+type passageJSON struct {
+	Name string   `json:"name"`
+	Tags []string `json:"tags,omitempty"`
+	Text string   `json:"text"`
+}
 
 type passageMetadataJSON struct {
 	Position string `json:"position,omitempty"` // Twine 2 (`position`) & Twine 1 (`twine-position`).
@@ -33,6 +39,10 @@ func (p *passage) unmarshalMetadata(marshaled []byte) error {
 	metadata := passageMetadataJSON{}
 	if err := json.Unmarshal(marshaled, &metadata); err != nil {
 		return err
+	}
+	// Drop invalid position data.
+	if metadata.Position == "NaN,NaN" {
+		metadata.Position = ""
 	}
 	p.metadata = &passageMetadata{
 		position: metadata.Position,
